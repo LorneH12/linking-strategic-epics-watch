@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Linking Strategic Epics · Targetprocess ↔ Jira Cloud tools training</title>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Enterprise Technology Services · Tools training</p>
+  <h1>Linking Strategic Epics</h1>
+  <p class="sub">Targetprocess ↔ Jira Cloud native integration · 3:57</p>
+  <video id="film" controls preload="metadata" playsinline poster="images/poster.jpg">
+    <source src="video/linking-strategic-epics.mp4" type="video/mp4">
+    <track kind="captions" src="video/linking-strategic-epics.en.vtt" srclang="en" label="English">
+  </video>
+  <nav class="chapters" aria-label="Chapters">
+    <button type="button" data-t="0.00">0:00 Start</button>
+    <button type="button" data-t="32.32">0:32 The hierarchy</button>
+    <button type="button" data-t="64.65">1:05 Two linking patterns</button>
+    <button type="button" data-t="88.34">1:28 Setup</button>
+    <button type="button" data-t="135.40">2:15 Linking work</button>
+    <button type="button" data-t="177.14">2:57 Staying in sync</button>
+    <button type="button" data-t="200.62">3:21 Watch-outs</button>
+    <button type="button" data-t="225.05">3:45 Recap</button>
+  </nav>
+  <nav aria-label="Other versions"><span>Other versions:</span>
+    <a href="https://lorneh12.github.io/linking-strategic-epics/">v1 · kinetic type</a>
+    <a href="https://lorneh12.github.io/linking-strategic-epics-v2/">v2 · 3D devices</a>
+    <a href="https://lorneh12.github.io/linking-strategic-epics-v3/">v3 · photoreal</a>
+    <a href="https://lorneh12.github.io/linking-strategic-epics-v3-1/">v3.1 · real room</a>
+  </nav>
+  <details class="embed">
+    <summary>Embed this video on another site</summary>
+    <p>Paste this where you want the player. It always shows the latest published version.</p>
+    <pre><code>&lt;iframe src="https://lorneh12.github.io/linking-strategic-epics-watch/embed.html" title="Linking Strategic Epics" width="960" height="540" style="border:0;max-width:100%;aspect-ratio:16/9;height:auto" allow="fullscreen; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+  </details>
+  <footer>Tool screens are illustrative recreations with demo data. Source: IBM Targetprocess documentation, Native Jira Integration guides. Jira and Targetprocess are trademarks of their respective owners.<br>Published 2026-11-01 · version 4.0</footer>
+</main>
+<script>
+  // chapter buttons jump the video
+  const v = document.getElementById('film');
+  document.querySelectorAll('.chapters button').forEach(b => b.addEventListener('click', () => { v.currentTime = +b.dataset.t; v.play(); }));
+</script>
+</body>
+</html>

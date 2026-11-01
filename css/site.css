@@ -1,0 +1,27 @@
+/* Watch page: colours first, then layout. */
+:root {
+  --amex-blue-light: #3FA0FF;   /* kicker, links */
+  --text-soft: #8FB4E6;         /* subtitle, footer */
+  --navy-top: #00175A;          /* page background, top */
+  --navy-bottom: #000820;       /* page background, bottom */
+  color-scheme: dark;
+}
+@font-face { font-family: Manrope; font-weight: 800; src: url(../fonts/Manrope-ExtraBold.ttf); }
+@font-face { font-family: Manrope; font-weight: 500; src: url(../fonts/Manrope-Medium.ttf); }
+body { margin: 0; min-height: 100vh; font-family: Manrope, system-ui, sans-serif; color: #fff;
+       background: radial-gradient(120% 80% at 50% 0%, var(--navy-top) 0%, var(--navy-bottom) 70%) fixed; }
+main { width: min(1200px, 92vw); margin: 0 auto; padding: 48px 0 64px; }
+p.kicker { margin: 0 0 10px; color: var(--amex-blue-light); font-weight: 800; font-size: 13px; letter-spacing: .24em; text-transform: uppercase; }
+h1 { margin: 0 0 6px; font-weight: 800; font-size: clamp(28px, 4vw, 44px); letter-spacing: -.01em; }
+p.sub { margin: 0 0 28px; color: var(--text-soft); font-weight: 500; }
+video { width: 100%; aspect-ratio: 16 / 9; display: block; border-radius: 10px; background: var(--navy-bottom);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, .45), 0 0 0 1px rgba(63, 160, 255, .18); }
+nav { margin-top: 16px; display: flex; gap: 10px 20px; flex-wrap: wrap; font-size: 14px; font-weight: 500; align-items: center; }
+.chapters button { font: inherit; font-size: 13px; color: #fff; background: rgba(63, 160, 255, .12); border: 1px solid rgba(63, 160, 255, .3);
+                   border-radius: 8px; padding: 7px 12px; cursor: pointer; }
+.chapters button:hover, .chapters button:focus-visible { background: rgba(63, 160, 255, .25); outline: none; }
+.embed { margin-top: 28px; color: var(--text-soft); font-size: 14px; }
+.embed summary { cursor: pointer; color: var(--amex-blue-light); font-weight: 800; }
+.embed pre { white-space: pre-wrap; word-break: break-all; background: rgba(0, 0, 0, .35); border: 1px solid rgba(63, 160, 255, .2); border-radius: 8px; padding: 12px; color: #D6E4F7; font-size: 12.5px; }
+a { color: var(--amex-blue-light); }
+footer { margin-top: 40px; color: var(--text-soft); font-size: 13px; font-weight: 500; opacity: .8; line-height: 1.6; }
